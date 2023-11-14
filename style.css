@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    height: 60px;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    transition: 0.4s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+    color: #8e82f5;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 4px;
+    background: #8e82f5;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+.box {
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.box:hover input{
+    width: 400px;
+}
+
+.box input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+}
+
+.box a .fas{
+    color: #8e82f5;
+    font-size: 18px;
+}
+
+/* home page*/
+#hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.75)), url(https://assets.architecturaldigest.in/photos/60084dd6cce5700439e12bf7/16:9/w_1600,c_limit/modern-living-room-decor-1366x768.jpg);
+    height: 90vh;
+    background-size: cover;
+    background-position: top 25% right 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h1{
+    font-size: 35px;
+    margin-top: 10px;
+    margin-left: 425px;
+    color: #8e82f5;
+}
+
+#hero p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: 15px;
+    
+}
+
+#hero button{
+    background-color: #8e82f5 ;
+    color: #ccc;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    margin-left: 525px;
+}
+
+/*feature products*/
+#product1{
+    text-align: center;
+}
+
+#product1 .h2{
+    padding: 15px 20px;
+    font-size: 35px;
+}
+#product1 .h{
+    font-size: 17px;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro{
+    width: 20%;
+    min-width: 250px;
+    padding: 15px 15px;
+    border: 1px solid #cce7d0; 
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 20px 0px;
+    transition: 0.2s ease;
+    position: relative;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.08);
+}
+
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span{
+    color: #606063;
+    font-size: 12px;
+}
+
+#product1 .pro .des h5{
+    padding-top: 7px;
+    color: 1a1a1a;
+    font-size: 14px;
+}
+
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(211, 153, 7);
+}
+
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #8e82f5;
+}
+
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #8e82f5;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* banner start*/
+.section-m1{
+    margin: 40px 0;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://www.harveynorman.com.au/blog/assets/Top_Furniture_Picks.jpg);
+    width: 100%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4{
+    color: #fff;
+    font-size: 30px;
+}
+
+#banner h2{
+    color: #fff;
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+#banner button:hover{
+    background: #8e82f5;
+    color: #fff;
+}
+
+/*footer start*/
+
+.footer{
+    margin: 0;
+    padding: 60px 0;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.footer .social{
+    text-align: center;
+    padding: 25px;
+    color: #8e82f5;
+}
+
+.footer .social a{
+    font-size: 35px;
+    color: inherit;
+    border: 1px solid #fff;
+    width: 50px;
+    height: 40px;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.90;
+}
+
+.footer .social a:hover {
+    opacity: 0.9;
+}
+
+.footer .copyright{
+    margin: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #8e82f5;
+}
+
+/*shop page-header*/
+
+#page-header{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://www.pennfurniture.com/cdn-cgi/image/w=1180,h=540,fit=contain,f=auto/css/20205/SlideShows/Home%20Page/Stickley%20Living%20Room%20Home%20Page%20Slideshow%20New%20color%20balance.jpg) ;
+    width: 100%;
+    height: 20vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h1,
+#page-header p{
+color: #fff;
+font-size: 30px;
+}
+
+#pagination{
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: #8e82f5;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#pagination a i {
+    font-size: 16px;
+    font-weight: 600;
+}
